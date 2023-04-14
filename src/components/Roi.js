@@ -13,12 +13,6 @@ const Roi = () => {
             setShowInfo(false)
         }else {
             setShowInfo(true)
-            // if (setShowInfo){
-            //     let details = document.querySelector(".details-description")
-            //     console.log(details)
-            //     details.classList.remove('none')
-            //     details.classList.add("block")
-            // }
         }
 
     }
