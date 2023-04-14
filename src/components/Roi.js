@@ -40,10 +40,8 @@ const Roi = () => {
           </div>
           <div className="currency">
             <div className="currency-switch">
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider round"></span>
-              </label>
+              <input type="checkbox" id="currency-switch" className='currency-input' />
+              <label for="currency-switch" className='currency-label'></label>
             </div>
             <p>USD</p>
           </div>
@@ -83,10 +81,8 @@ const Roi = () => {
         <div className="section section-accelerate">
           <h3>Enable Accelerated APY</h3>
           <div className="accelerate-switch">
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider round"></span>
-            </label>
+            <input type="checkbox" id="switch" />
+            <label for="switch"></label>
           </div>
         </div>
 
