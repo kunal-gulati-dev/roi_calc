@@ -14,8 +14,12 @@ const Roi = () => {
         }else {
             setShowInfo(true)
         }
-
     }
+
+    const handleChange = () => {
+        console.log("")
+    }
+
   return (
     <main className="roi-main">
       <div className="main">
@@ -34,15 +38,24 @@ const Roi = () => {
           </div>
           <div className="currency">
             <div className="currency-switch">
-              <input type="checkbox" id="currency-switch" className='currency-input' />
-              <label for="currency-switch" className='currency-label'></label>
+              <input
+                type="checkbox"
+                id="currency-switch"
+                className="currency-input"
+              />
+              <label htmlFor="currency-switch" className="currency-label"></label>
             </div>
             <p>USD</p>
           </div>
         </div>
 
         {/* input price section */}
-        <input className="price-input" type="text" value="2.10000 CAKE" />
+        <input
+          className="price-input"
+          type="text"
+          value="2.10000 CAKE"
+          onChange={handleChange}
+        />
 
         {/* price buttons */}
 
@@ -76,7 +89,7 @@ const Roi = () => {
           <h3>Enable Accelerated APY</h3>
           <div className="accelerate-switch">
             <input type="checkbox" id="switch" />
-            <label for="switch"></label>
+            <label htmlFor="switch"></label>
           </div>
         </div>
 
@@ -97,7 +110,12 @@ const Roi = () => {
         {/* rates section */}
         <div className="section section-rates">
           <h2>ROI at Current Rates</h2>
-          <input className="rates-input" type="text" value="100.0 USD" />
+          <input
+            className="rates-input"
+            type="text"
+            value="100.0 USD"
+            onChange={handleChange}
+          />
           <p className="rates-para">~ 3CAKE + 10 DON</p>
         </div>
 
