@@ -1,10 +1,9 @@
-
-import './App.css';
+import Roi from "./components/Roi"
 
 function App() {
   return (
-    <div className="App">
-      hello
+    <div className="app">
+      <Roi />
     </div>
   );
 }

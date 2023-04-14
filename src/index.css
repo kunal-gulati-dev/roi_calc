@@ -1,5 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #ff922b;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+}
+
+.section {
+  max-width: 514px;
+}
+
+
+.roi-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main {
+  justify-content: center;
+  width: 534px;
+  height: 700px;
+  background-color: #FFFFFF;
+  margin-top: 100px;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-header h1 {
+  font-size: 23px;
+  color: #070602;
+}
+
+.calc-close-btn {
+  width: 18px;
+  height: 18px;
+}
+
+.calc-close-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/*  second section */
+
+.second-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 1rem;
+
+}
+
+
+.second-section .cake {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.second-section .cake p {
+  font-weight: 600;
+  color: #808080;
+}
+
+
+.second-section .currency {
+
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 14px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  background-color: #F8C400;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: -24px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: #F8C400;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #F8C400;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.second-section .currency p {
+  font-weight: 600;
+  color: #808080;
+}
+
+
+.price-input {
+  all: unset;
+  width: 100%;
+  background-color: #F9FAFB;
+  border-radius: 10px;
+  width: 464px;
+  height: 55px;
+  border: 1px solid #ECECEC;
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding-inline: 10px;
+  margin-top: 10px;
+}
+
+.price-button-section {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 9px 23px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #F8F8F8;
+}
+
+.price-btn-active {
+  background-color: #FFF9AA;
+}
+
+.price-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.price-section__price{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A8A8A8;
+}
+
+
+
+/* timeframe section */
+
+.section-timeframe {
+  margin-top: 10px;
+}
+
+
+.section-timeframe h2 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+
+.timeframe-buttons{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeframe-btn {
+  border-radius: 30px;
+  background: #F9FAFB;
+  font-weight: 600;
+  font-size: 12px;
+  color: #A2A2A2;
+  padding: 10px 23px;
+}
+
+.timeframe-btn-active {
+  background: #FCEB74;
+  border: 1px solid #FED700;
+  color: #000;
+}
+
+/*  tier section */
+
+.section-tier {
+  margin-top: 10px;
+}
+
+.section-tier h2 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #A3A3A3;
+}
+
+
+.tier-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+
+.section-rates {
+  margin-top: 10px;
+}
+
+.section-rates h2 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #A3A3A3;
+  text-align: right;
+}
+
+.rates-input {
+  all: unset;
+  width: 100%;
+  background-color: #F9FAFB;
+  border-radius: 10px;
+  width: 464px;
+  height: 55px;
+  border: 1px solid #ECECEC;
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding-inline: 10px;
+  margin-top: 10px;
+}
+
+.rates-para {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A8A8A8;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* decision button */
+
+.decision-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  /* column-gap: 10px; */
+}
+
+.decision-btn {
+  padding: 14px 100px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  width: 230px;
+}
+
+.accpet-btn {
+  background: #000000;
+  color: #fff;
+}
+
+.cancel-btn {
+  color: #666666;
+  border: 1px solid #666666;
+}
+
+
