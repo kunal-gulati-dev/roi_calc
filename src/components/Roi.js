@@ -1,8 +1,27 @@
 import close_button from '../assets/close_button.png'
 import cake_small from '../assets/cake_small.png'
+import arrow_down from '../assets/arrow-down.png'
+import React, { useState } from "react";
+
 
 
 const Roi = () => {
+    const [showInfo, setShowInfo] = useState(false);
+
+    const toggleDetails = () => {
+        if (showInfo){
+            setShowInfo(false)
+        }else {
+            setShowInfo(true)
+            // if (setShowInfo){
+            //     let details = document.querySelector(".details-description")
+            //     console.log(details)
+            //     details.classList.remove('none')
+            //     details.classList.add("block")
+            // }
+        }
+
+    }
   return (
     <main className="roi-main">
       <div className="main">
@@ -97,6 +116,29 @@ const Roi = () => {
             <button className="decision-btn accpet-btn">Accept</button>
             <button className="decision-btn cancel-btn">Cancel</button>
           </div>
+        </div>
+
+        <div className="section section-details">
+          <div className="detail-header" onClick={toggleDetails}>
+            <p>{!showInfo ? "Show details" : "Hide details"}</p>
+            <img src={arrow_down} alt="arrow down" />
+          </div>
+
+          {showInfo && (
+            <div className="section details-description">
+              <div className="basic-details">
+                <p className="basic-detail-text">APY</p>
+                <p className="basic-detail-number">63.34%</p>
+              </div>
+              <ul className="basic-detail-list">
+                <li className="list-item">Calculated based on current rates</li>
+                <li className="list-item">
+                  All fugures are estimates provided for your convenience only,
+                  and by no means represent guaranted returns.
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </main>

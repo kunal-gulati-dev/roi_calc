@@ -37,7 +37,7 @@ button {
 .main {
   justify-content: center;
   width: 534px;
-  height: 700px;
+  height: auto;
   background-color: #FFFFFF;
   margin-top: 100px;
   border-radius: 20px;
@@ -333,3 +333,58 @@ input:checked + .slider:before {
 }
 
 
+/* details section */
+
+.section-details {
+  margin-top: 10px;
+}
+
+.details-description {
+  margin-top: 10px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+
+.basic-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.basic-details .basic-detail-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #070602;
+}
+
+.basic-detail-list {
+  width: 484px;
+  margin-left: 18px;
+}
+
+
+.basic-details .basic-detail-number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  color: #FAC200;
+}
+
+
+
+.basic-detail-list .list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #A3A3A3;
+}
